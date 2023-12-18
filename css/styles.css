@@ -1,0 +1,34 @@
+body {
+	font-family: 'Montserrat', san-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+header-logo {
+	color: #111;
+	font-family: 'Montserrat', san-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: сalc(20/18);
+	letter-spacing: -0.03em;
+}
+
+header-logo-italic {
+	font-style: italic;
+}
+
+header-nav-link {
+	color: #111;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: -0.02em;
+}
