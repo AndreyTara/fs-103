@@ -685,14 +685,10 @@ button {
 
 .footer-menu-nav {
 	margin-right: 358px;
-
 }
-
-
 
 .footer-menu-list {
 	display: flex;
-
 }
 
 .footer-menu-item:not(:last-child) {
