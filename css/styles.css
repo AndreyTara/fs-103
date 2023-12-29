@@ -237,6 +237,10 @@ button {
 	text-wrap: nowrap;
 }
 
+.btn-fill:hover {
+	color: #FD9222;
+	background-color: #FCF1E0;
+}
 
 .hero-btn-made {
 	padding: 14px 40px 14px 40px;
@@ -254,6 +258,11 @@ button {
 	border-radius: 100px;
 	padding: 14px 40px 14px 40px;
 	text-wrap: nowrap;
+}
+
+.btn-transparent:hover {
+	color: #FD9222;
+	border-color: #FD9222;
 }
 
 .hero-btn-down {
@@ -599,6 +608,11 @@ button {
 	background-color: transparent;
 	padding: 14px 40px;
 	text-wrap: nowrap;
+}
+
+.loved-btn:hover {
+	color: #FFF;
+	background-color: #FD9222;
 }
 
 .footer {
