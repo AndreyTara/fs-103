@@ -39,6 +39,10 @@ button {
 	border-style: none;
 }
 
+img {
+	display: block;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -97,23 +101,25 @@ button {
 }
 
 .header {
-	padding-top: 24px;
 	padding-bottom: 32px;
-
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .header-nav {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	flex-wrap: wrap;
+	margin-right: 90px;
 }
 
 .header-nav-logo {
-	display: block;
 	margin-right: 413px;
+	display: flex;
+	gap: 4px;
+	padding-top: 24px;
 }
 
 .header-nav-logo-link {
@@ -122,38 +128,37 @@ button {
 	justify-content: center;
 }
 
-
 .header-nav-logo-name {
-	display: block;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.11;
 	letter-spacing: -0.03em;
+	white-space: nowrap;
 }
 
 .header-nav-logo-italic {
 	font-style: italic;
 }
 
-.header-nav-logo-img {
-	display: block;
-}
+.header-nav-logo-img {}
 
 .header-nav-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 90px;
+	/* margin-right: 90px; */
+	gap: 24px;
+	white-space: nowrap;
+	padding-top: 24px;
 }
 
 .header-nav-item:not(:last-child) {
-	margin-right: 24px;
+	/* margin-right: 24px; */
 }
 
 .header-nav-item {
 	display: block;
 }
-
 
 .header-nav-link {
 	font-size: 14px;
@@ -162,12 +167,11 @@ button {
 	letter-spacing: -0.02em;
 }
 
-
 .header-soc-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	padding-top: 24px;
 }
 
 .header-soc-item {
@@ -214,8 +218,16 @@ button {
 
 .hero-btn {
 	display: flex;
-	justify-content: space-evenly;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
+
+.hero-btn-slave {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
 }
 
 .hero-btn-buy {
@@ -223,10 +235,10 @@ button {
 	font-weight: 600;
 	line-height: 1.21;
 	letter-spacing: 0.02em;
-	margin-right: 14px;
+	/* margin-right: 14px; */
 	padding: 14px 40px 14px 40px;
-
 }
+
 
 .btn-fill {
 	display: block;
@@ -234,7 +246,7 @@ button {
 	background-color: #FD9222;
 	border: 1px solid transparent;
 	border-radius: 100px;
-	text-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .btn-fill:hover {
@@ -249,7 +261,6 @@ button {
 	line-height: 1.21;
 	letter-spacing: 0.02em;
 	color: #FFF;
-	margin-right: 585px;
 }
 
 .btn-transparent {
@@ -289,6 +300,7 @@ button {
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
 	margin-right: 14px;
+	white-space: nowrap;
 }
 
 .hero-btn-scroll {
@@ -309,18 +321,22 @@ button {
 	margin-bottom: 120px;
 }
 
+.feachers-container {
+	padding: 50px 0;
+}
+
 .feachers-list {
 	display: flex;
-	justify-content: center;
-	padding: 50px;
+	justify-content: space-between;
 }
 
 .feachers-item {
 	display: flex;
 	flex-direction: column;
-	max-width: 308px;
+	max-width: calc((100% - 104px) / 3);
 	width: 100%;
-	margin-right: 88px;
+	padding-right: 18px;
+	padding-left: 18px;
 }
 
 .feachers-item:last-child {
@@ -338,11 +354,14 @@ button {
 }
 
 .taste {
+	margin-bottom: 120px;
+}
+
+.taste-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 120px;
 }
 
 .taste-title {
@@ -389,24 +408,29 @@ button {
 	height: 100%;
 }
 
-
-.cacao {
+.taste-item:nth-child(4n+1) {
+	/* cacao */
 	color: #fff;
 	background-color: #FD9222;
 }
 
-.nuts {
+.taste-item:nth-child(4n+3) {
+	/* nats */
 	color: #fff;
 	background-color: #1E1823;
 }
 
-.other {
+.taste-item:nth-child(even) {
+	/* other */
 	border: 1px solid #FD9222;
 	background-color: #FFFFFF;
 }
 
 .made {
 	margin-bottom: 120px;
+}
+
+.made-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -414,15 +438,17 @@ button {
 
 .made-title {
 	margin-bottom: 50px;
+
 }
 
 .made-main-part {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .made-img {
-	margin-right: 52px;
+	margin-right: 20px;
 }
 
 .made-slave-part {
@@ -435,12 +461,13 @@ button {
 	letter-spacing: -0.02em;
 	text-align: left;
 	margin-bottom: 28px;
+	max-width: 350px;
 }
 
 .made-list {
 	list-style: disc;
 	padding-left: 16px;
-
+	max-width: 451px;
 }
 
 .made-item {
@@ -454,9 +481,12 @@ button {
 .made-text {}
 
 
+
 .product {
 	margin-bottom: 120px;
 }
+
+.product-container {}
 
 .product-title {}
 
@@ -516,12 +546,15 @@ button {
 	margin-bottom: 120px;
 }
 
+.sellers-container {}
+
 .sellers-title {}
 
 .sellers-list {
 	display: flex;
 	justify-content: space-between;
-	column-gap: 16px;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
 .sellers-item {
@@ -547,17 +580,25 @@ button {
 
 .loved {
 	margin-bottom: 120px;
+
+}
+
+.loved-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.loved-title {}
+.loved-title {
+	margin-bottom: 91px;
+}
 
 .loved-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 50px;
+	row-gap: 60px;
 	column-gap: 28px;
 }
 
@@ -622,9 +663,12 @@ button {
 	padding: 50px 32px;
 }
 
-.footer-main-part {
+.footer-first-part {
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 54px;
+	row-gap: 50px;
 }
 
 .footer-title {
@@ -633,7 +677,6 @@ button {
 	line-height: 34px;
 	letter-spacing: -0.02em;
 	width: 300px;
-	margin-right: 510px;
 	text-align: left;
 }
 
@@ -641,10 +684,15 @@ button {
 	color: #FD9222;
 }
 
+
+.footer-content {
+	display: flex;
+	column-gap: 50px;
+}
+
 .footer-soc-part {
 	display: flex;
 	flex-direction: column;
-	margin-right: 50px;
 }
 
 .footer-subtitle {
@@ -653,8 +701,8 @@ button {
 	line-height: 1.29;
 	text-align: left;
 	margin-bottom: 14px;
+	white-space: nowrap;
 }
-
 
 .footer-soc-list {
 	display: flex;
@@ -692,21 +740,24 @@ button {
 	margin-bottom: 24px;
 }
 
-.footer-slave-part {
+.footer-second-part {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 358px;
+	row-gap: 20px;
 }
 
-.footer-menu-nav {
-	margin-right: 358px;
-}
+.footer-menu-nav {}
 
 .footer-menu-list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
 }
 
-.footer-menu-item:not(:last-child) {
-	margin-right: 24px;
+.footer-menu-item {
+	white-space: nowrap;
 }
 
 .footer-menu-link {
@@ -716,6 +767,12 @@ button {
 	line-height: 1.14;
 	letter-spacing: -0.02em;
 	text-align: left;
+}
+
+.footer-subscribe {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
 }
 
 .footer-input {
@@ -729,7 +786,6 @@ button {
 	border: 1px solid #FFFFFF26;
 	border-radius: 30px;
 	padding: 14px 24px;
-	margin-right: 8px;
 }
 
 .footer-btn {
