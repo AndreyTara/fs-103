@@ -103,7 +103,6 @@ img {
 .header {
 	padding-bottom: 32px;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -112,20 +111,18 @@ img {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-right: 90px;
+	margin-left: auto;
 }
 
 .header-nav-logo {
-	margin-right: 413px;
 	display: flex;
-	gap: 4px;
 	padding-top: 24px;
+	margin-right: auto;
 }
 
 .header-nav-logo-link {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .header-nav-logo-name {
@@ -145,16 +142,12 @@ img {
 .header-nav-list {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	/* margin-right: 90px; */
 	gap: 24px;
 	white-space: nowrap;
 	padding-top: 24px;
 }
 
-.header-nav-item:not(:last-child) {
-	/* margin-right: 24px; */
-}
+.header-nav-item {}
 
 .header-nav-item {
 	display: block;
@@ -168,6 +161,7 @@ img {
 }
 
 .header-soc-list {
+	padding-left: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -465,13 +459,24 @@ img {
 }
 
 .made-list {
-	list-style: disc;
+	/* list-style: url(../images/ellipse.svg); */
 	padding-left: 16px;
 	max-width: 451px;
 }
 
 .made-item {
 	margin-top: 24px;
+}
+
+.made-item::before {
+	content: url('../images/ellipse.svg');
+	display: block;
+	position: relative;
+	left: -16px;
+	bottom: -7px;
+	width: 8px;
+	height: 8px;
+	z-index: 1;
 }
 
 .made-item:nth-child(1) {
