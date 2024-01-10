@@ -231,6 +231,10 @@ img {
 	letter-spacing: 0.02em;
 	/* margin-right: 14px; */
 	padding: 14px 40px 14px 40px;
+	/* transition-duration: backgrounb-color;
+	transition-property:back ;
+	transition-delay: 1000ms; */
+
 }
 
 
@@ -331,7 +335,18 @@ img {
 	width: 100%;
 	padding-right: 18px;
 	padding-left: 18px;
+	position: relative;
 }
+
+/* .feachers-item::after {
+	width: 1px;
+	height: 124px;
+	right: -44px;
+	background-color: #fff;
+	position: absolute;
+	top: -50%;
+	transform: translateY(-50%);
+} */
 
 .feachers-item:last-child {
 	margin-right: 0;
