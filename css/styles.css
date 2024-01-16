@@ -58,7 +58,7 @@ img {
 }
 
 html {
-	border: 1px dashed grey;
+	/* border: 1px dashed grey; */
 }
 
 .body {
@@ -68,7 +68,8 @@ html {
 	max-width: 1200px;
 	/* width: 100%; */
 	margin: 0 auto;
-	border: 1px dashed blue;
+
+	/* border: 1px dashed blue; */
 }
 
 .section-title {
