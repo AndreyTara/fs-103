@@ -56,6 +56,9 @@ img {
 	overflow: hidden;
 }
 
+html {
+	border: 1px dashed grey;
+}
 
 .body {
 	font-family: 'Montserrat', san-serif;
@@ -188,19 +191,11 @@ img {
 	fill: transparent;
 }
 
-.header-soc-icon:hover {
-	stroke: #FD9222;
-}
-
-/* 
-.icon {
-	stroke: #111111;
-	fill: transparent;
-}
+.icon {}
 
 .icon:hover {
 	stroke: #FD9222;
-} */
+}
 
 .hero {
 	max-width: 1136px;
@@ -290,7 +285,6 @@ img {
 .hero-btn-down {
 	display: flex;
 	align-items: center;
-
 }
 
 
@@ -357,6 +351,22 @@ img {
 	padding-left: 18px;
 	position: relative;
 }
+
+.feachers-box-icon {
+	width: 62px;
+	height: 62px;
+	border: 1px solid #FFFFFF80;
+	border-radius: 50%;
+	margin-bottom: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feachers-icon {
+	fill: #FD9222;
+}
+
 
 /* .feachers-item::after {
 	width: 1px;
@@ -798,6 +808,10 @@ img {
 
 .footer-menu-item {
 	white-space: nowrap;
+}
+
+.footer-soc-icon {
+	stroke: #FFFFFF;
 }
 
 .footer-menu-link {
