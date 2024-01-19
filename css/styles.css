@@ -332,7 +332,6 @@ html {
 /*  feachers ________________________________________________*/
 .feachers {
 	background: #1E1823;
-	margin-bottom: 120px;
 }
 
 .feachers-container {
@@ -396,7 +395,7 @@ html {
 }
 
 .taste {
-	margin-bottom: 120px;
+	padding-top: 120px;
 }
 
 .taste-container {
@@ -528,7 +527,7 @@ html {
 .taste-second-text {}
 
 .made {
-	margin-bottom: 120px;
+	padding-top: 120px;
 }
 
 .made-container {
@@ -595,7 +594,7 @@ html {
 
 
 .product {
-	margin-bottom: 120px;
+	padding-top: 120px;
 }
 
 .product-container {}
@@ -655,7 +654,7 @@ html {
 
 
 .sellers {
-	margin-bottom: 120px;
+	padding-top: 120px;
 }
 
 .sellers-container {}
@@ -680,18 +679,25 @@ html {
 	align-items: center;
 }
 
+.sellers-box {
+	position: relative;
+	overflow: hidden;
+}
+
 .sellers-img {
 	width: 368px;
 	height: 464px;
 	margin-bottom: 28px;
 }
 
+
 .sellers-subtitle {
 	letter-spacing: -0.02em;
 }
 
 .loved {
-	margin-bottom: 120px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 
 }
 
