@@ -525,6 +525,27 @@
 						<textarea class="modal__text" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
 					</li>
 				</ul>
+				<div class="modal-form-field checkbox">
+					<input
+						class="modal-privacy-input visually-hidden"
+						type="checkbox"
+						name="user-privacy"
+						id="user-privacy"
+						value="true"
+					/>
+					<label class="modal-privacy-label" for="user-privacy">
+						<span class="modal-privacy-item"
+							><svg class="modal-privacy-icon" width="10" height="8">
+								<use
+									href="./images/icons.svg#icon-check-click"
+								></use></svg></span
+						>I accept the terms and conditions of the &#160;<a
+							class="modal-privacy-text"
+							href=""
+							>Privacy Policy</a
+						>
+					</label>
+				</div>
 				<button class="modal__submit btn-fill" type="submit">Sent</button>
 			</form>
 		</div>
