@@ -33,6 +33,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 button {
@@ -220,8 +221,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 /* @media screen and (min-device-pixel-ratio: 2),
@@ -431,7 +431,6 @@ html {
 .taste-title {
   max-width: 412px;
   width: 100%;
-  margin-bottom: 28px;
 }
 
 .taste-list {
@@ -571,7 +570,6 @@ html {
 }
 
 .made-title {
-  margin-bottom: 50px;
 }
 
 .made-main-part {
@@ -717,6 +715,8 @@ html {
 
 .sellers-img {
   display: block;
+  width: 368px;
+  height: 464px;
 }
 
 .sellers-box {
@@ -764,19 +764,19 @@ html {
 }
 
 .loved-title {
-  margin-bottom: 91px;
 }
 
 .loved-list {
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 50px;
   row-gap: 60px;
   column-gap: 28px;
 }
 
 .loved-item {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
