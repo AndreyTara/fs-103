@@ -208,12 +208,37 @@ html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background: #11111199;
+  /* background: #11111199; */
   padding: 381px 40px 40px 40px;
   border-radius: 30px;
   margin-bottom: 80px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin: 0 auto;
 }
 
+/* @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-office-mob-2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+} */
 .hero-title {
   max-width: 490px;
   color: #fff;
@@ -242,8 +267,8 @@ html {
   font-weight: 600;
   line-height: 1.21;
   letter-spacing: 0.02em;
-  /* margin-right: 14px; */
   padding: 14px 40px 14px 40px;
+  /* margin-right: 14px; */
   /* transition-duration: backgrounb-color;
 	transition-property:back ;
 	transition-delay: 1000ms; */
