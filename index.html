@@ -14,70 +14,139 @@
   </head>
 
   <body class="body">
-    <header class="header container">
-      <div class="header-nav-logo">
-        <a class="header-nav-logo-link" href="./index.html">
-          <p class="header-nav-logo-name">
-            <span class="header-nav-logo-italic">SIMPLY</span> CHOCOLATE
-          </p>
-          <img
-            class="header-nav-logo-img"
-            src="./images/chocolate.svg"
-            alt="chocolat icon"
-          />
-        </a>
-      </div>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./index.html">Home</a>
+    <header class="header">
+      <div class="header-container container">
+        <div class="header-nav-logo">
+          <a class="header-nav-logo-link" href="./index.html">
+            <p class="header-nav-logo-name">
+              <span class="header-nav-logo-italic">SIMPLY</span> CHOCOLATE
+            </p>
+            <img
+              class="header-nav-logo-img"
+              src="./images/chocolate.svg"
+              alt="chocolat icon"
+            />
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#loved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-soc-list">
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="header-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#made">How it’s made?</a>
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="header-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#loved">Chocolate is loved</a>
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="header-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-soc-list">
-        <li class="header-soc-item">
-          <a
-            class="header-soc-link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noppener noofferer"
-          >
-            <svg class="header-soc-icon icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
+        <button class="menu-open-btn" type="button" id="modal-menu-open">
+          <svg class="menu-open-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu" id="header-modal-menu">
+        <div>
+          <button type="button" class="menu-close-btn" id="modal-menu-close">
+            <svg class="mob-soc-icon icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
-          </a>
-        </li>
-        <li class="header-soc-item">
-          <a
-            class="header-soc-link"
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noppener noofferer"
-          >
-            <svg class="header-soc-icon icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-soc-item">
-          <a
-            class="header-soc-link"
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noppener noofferer"
-          >
-            <svg class="header-soc-icon icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          </button>
+          <nav>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Home</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="https://www.google.com/" class="mob-menu-link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="mob-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="mob-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noppener noofferer"
+            >
+              <svg class="mob-soc-icon icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
@@ -91,7 +160,7 @@
             <button
               class="hero-btn-buy btn-fill"
               type="button"
-              onclick="document.querySelector('.backdrop').classList.add('is-open')"
+              id="backdrop-open"
             >
               Buy now
             </button>
@@ -894,14 +963,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop" id="backdrop">
       <div class="modal container">
-        <svg
-          class="modal-close-btn"
-          width="28"
-          height="28"
-          onclick="document.querySelector('.backdrop').classList.remove('is-open')"
-        >
+        <svg class="modal-close-btn" width="28" height="28" id="backdrop-close">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
         <p class="modal-title section-title">
@@ -1000,5 +1064,6 @@
         </form>
       </div>
     </div>
+    <script src="./script/main.js"></script>
   </body>
 </html>
