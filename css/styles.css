@@ -282,7 +282,6 @@ html {
   /* background: #11111199; */
   padding: 381px 40px 40px 40px;
   border-radius: 30px;
-  margin-bottom: 80px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -291,7 +290,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 80px;
+  /* margin-bottom: 80px; */
+  /* padding-bottom: 80px; */
 }
 
 /* @media screen and (min-device-pixel-ratio: 2),
@@ -839,8 +839,10 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .loved {
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 80px;
 }
 
 .loved-container {
@@ -853,35 +855,36 @@ html {
 }
 
 .loved-list {
-  padding-bottom: 50px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 60px;
-  column-gap: 28px;
+  gap: 32px;
+  max-width: 335px;
+  max-height: 298px;
+  overflow-y: hidden;
+  padding-bottom: 32px;
 }
 
 .loved-item {
-  margin-top: 40px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.loved-item-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
   border: 1px solid #1111111a;
-  box-shadow: 0px 9px 100px 0px #11111108;
   background-color: #ffffff;
-  max-width: 360px;
-  width: 100%;
-  padding: 0 24px 24px 24px;
+  box-shadow: 0px 9px 100px 0px #11111108;
+  padding: 58px 24px 24px 24px;
+  position: relative;
 }
-
 .loved-img {
-  margin-bottom: -18px;
-  border-radius: 100%;
-}
-
-.loved-img {
-  transform: translate(0, -40px);
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%);
+  border-radius: 50%;
 }
 
 .loved-subtitle {
@@ -890,6 +893,7 @@ html {
 }
 
 .loved-text {
+  height: 92px;
   max-width: 312px;
   width: 100%;
   letter-spacing: -0.02em;
@@ -1350,6 +1354,18 @@ html {
     flex-direction: row;
     gap: 32px;
   }
+  /*----------- Loved --------------*/
+  .loved-list {
+    max-width: unset;
+    /* max-height: unset; */
+    /* overflow-y: unset; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    gap: 32px 16px;
+  }
+  .loved-item {
+    width: calc((100% - 16px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -1385,5 +1401,18 @@ html {
   .taste-img {
     width: 214px;
     height: 160px;
+  }
+  /*----------- Loved --------------*/
+  .loved-list {
+    max-width: unset;
+    max-height: unset;
+    overflow-y: unset;
+    flex-direction: row;
+    flex-wrap: unset;
+    gap: 28px;
+  }
+
+  .loved-item {
+    width: calc((100% - 56px) / 3);
   }
 }
