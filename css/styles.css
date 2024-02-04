@@ -99,22 +99,24 @@ img {
 }
 
 .container {
-  max-width: 365px;
+  max-width: 335px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 .header {
+  padding-top: 20px;
+  padding-bottom: 27px;
 }
 .header-container {
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 .header-nav {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   flex-wrap: wrap;
   margin-left: auto;
@@ -122,7 +124,6 @@ img {
 
 .header-nav-logo {
   display: flex;
-  padding-top: 24px;
   margin-right: auto;
 }
 
@@ -132,9 +133,9 @@ img {
 }
 
 .header-nav-logo-name {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   white-space: nowrap;
 }
@@ -142,8 +143,12 @@ img {
 .header-nav-logo-italic {
   font-style: italic;
 }
-
 .header-nav-logo-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
 }
 
 .header-nav-list {
@@ -151,7 +156,6 @@ img {
   align-items: center;
   gap: 24px;
   white-space: nowrap;
-  padding-top: 24px;
 }
 
 .header-nav-item {
@@ -169,23 +173,25 @@ img {
 }
 
 .header-soc-list {
-  padding-left: 90px;
-  display: flex;
+  display: none;
+  padding-left: 48px;
   align-items: center;
   justify-content: center;
-  padding-top: 24px;
 }
 
 .header-soc-item {
   display: block;
-  max-width: 24px;
+  max-width: 20px;
+  max-height: 20px;
+  /* max-width: 24px; */
   width: 100%;
-  max-height: 24px;
+  /* max-height: 24px; */
   height: 100%;
 }
 
 .header-soc-item:not(:last-child) {
-  margin-right: 14px;
+  /* margin-right: 14px; */
+  margin-right: 12px;
 }
 
 .header-soc-link {
@@ -203,8 +209,8 @@ img {
   stroke: #fd9222;
 }
 .menu-open-btn {
-  /* display: none; */
-  padding-top: 24px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
   background-color: transparent;
 }
 .menu-open-btn:hover .menu-open-icon {
@@ -291,7 +297,7 @@ img {
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-  .hero {
+  .hero-container {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -304,7 +310,7 @@ img {
   }
 }
 .hero-title {
-  width: 100%;
+  max-width: 296px;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -322,8 +328,9 @@ img {
 
 .hero-btn-slave {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
 }
 
 .hero-btn-buy {
@@ -1312,7 +1319,22 @@ img {
   .container {
     max-width: 734px;
   }
+  /*----------- header--------------*/
+  .header-nav {
+    display: flex;
+  }
+  .header-soc-list {
+    display: flex;
+  }
+  .menu-open-btn {
+    display: none;
+  }
+  .header-nav-logo-img {
+    width: 24px;
+    height: 24px;
+  }
   /*----------- Hero--------------*/
+
   .hero-container {
     padding: 671px 40px 40px 40px;
     background-image: linear-gradient(
@@ -1324,7 +1346,7 @@ img {
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    .hero {
+    .hero-container {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -1426,6 +1448,7 @@ img {
     max-width: 1166px;
   }
   /*----------- Hero--------------*/
+
   .hero-container {
     padding: 381px 40px 40px 40px;
     background-image: linear-gradient(
@@ -1437,7 +1460,7 @@ img {
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    .hero {
+    .hero-container {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -1445,6 +1468,22 @@ img {
         url(../images/hero-bg-des-2x.jpg);
     }
   }
+  .header-nav-logo-name {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .header-soc-list {
+    padding-left: 90px;
+  }
+
+  .header-soc-item {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  .header-soc-item:not(:last-child) {
+    margin-right: 14px;
+  }
+
   /*----------- Feachers --------------*/
   .feachers {
     margin-top: 80px;
