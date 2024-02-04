@@ -59,9 +59,6 @@ img {
   overflow: hidden;
 }
 
-html {
-}
-
 .body {
   font-family: "Montserrat", san-serif;
   color: #111111;
@@ -240,7 +237,6 @@ html {
 }
 .mob-menu-list {
   padding-left: 28px;
-
   margin-bottom: 32px;
 }
 .mob-menu-item:not(:last-child) {
@@ -272,29 +268,27 @@ html {
 }
 .mob-soc-link {
 }
-
+/*----------- Hero--------------*/
 .hero {
-  max-width: 1136px;
-  width: 100%;
-  margin: 0 auto;
+}
+
+.hero-container {
   display: flex;
   flex-direction: column;
-  /* background: #11111199; */
-  padding: 381px 40px 40px 40px;
+  /* padding: 381px 40px 40px 40px; */
+  padding: 395px 20px 20px 20px;
   border-radius: 30px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero_bg.jpg);
+    url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* margin-bottom: 80px; */
-  /* padding-bottom: 80px; */
 }
 
-/* @media screen and (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero {
@@ -302,28 +296,28 @@ html {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-office-mob-2x.jpg);
+      url(../images/hero-bg-mob-2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
   }
-} */
+}
 .hero-title {
-  max-width: 490px;
+  width: 100%;
   color: #fff;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.21;
+  line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .hero-btn {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .hero-btn-slave {
@@ -337,11 +331,7 @@ html {
   font-weight: 600;
   line-height: 1.21;
   letter-spacing: 0.02em;
-  padding: 14px 40px 14px 40px;
-  /* margin-right: 14px; */
-  /* transition-duration: backgrounb-color;
-	transition-property:back ;
-	transition-delay: 1000ms; */
+  padding: 12px 28px;
 }
 
 .btn-fill {
@@ -359,7 +349,7 @@ html {
 }
 
 .hero-btn-made {
-  padding: 14px 40px 14px 40px;
+  padding: 12px 28px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21;
@@ -371,7 +361,7 @@ html {
   display: block;
   border: 1px solid #ffffff;
   border-radius: 100px;
-  padding: 14px 40px 14px 40px;
+  padding: 12px 28px;
   text-wrap: nowrap;
 }
 
@@ -399,9 +389,10 @@ html {
 
 .hero-btn-text {
   display: block;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   color: #ffffff;
   margin-right: 14px;
@@ -1321,6 +1312,45 @@ html {
   .container {
     max-width: 734px;
   }
+  /*----------- Hero--------------*/
+  .hero-container {
+    padding: 671px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  .hero-title {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+  .hero-btn {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-btn-buy {
+    padding: 14px 40px;
+  }
+  .hero-btn-made {
+    padding: 14px 40px;
+  }
+  .hero-btn-text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
   /*----------- feachers --------------*/
   .feachers {
     margin-top: 40px;
@@ -1394,6 +1424,26 @@ html {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1166px;
+  }
+  /*----------- Hero--------------*/
+  .hero-container {
+    padding: 381px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-des-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-des-2x.jpg);
+    }
   }
   /*----------- Feachers --------------*/
   .feachers {
