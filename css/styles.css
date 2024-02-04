@@ -76,7 +76,7 @@ img {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .section-title span {
@@ -633,7 +633,7 @@ img {
 }
 
 .made {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .made-container {
@@ -643,39 +643,45 @@ img {
 }
 
 .made-title {
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 32px;
 }
 
 .made-main-part {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .made-img {
-  margin-right: 20px;
+  width: 100%;
+  height: 500px;
 }
 
 .made-slave-part {
-  padding: 32px;
+  margin-top: 20px;
+  padding: 20px 14px;
   background-color: #ffffff;
   border-radius: 15px;
 }
 
 .made-subtitle {
+  /* margin-top: 20px; */
   letter-spacing: -0.02em;
   text-align: left;
-  margin-bottom: 28px;
-  max-width: 350px;
+  width: 100%;
 }
 
 .made-list {
-  /* list-style: url(../images/ellipse.svg); */
+  padding-top: 20px;
   padding-left: 16px;
-  max-width: 451px;
 }
 
 .made-item {
-  margin-top: 24px;
+  padding-top: 18px;
 }
 
 .made-item::before {
@@ -690,10 +696,14 @@ img {
 }
 
 .made-item:nth-child(1) {
-  margin-top: 0;
+  padding-top: 0;
 }
 
 .made-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .product {
@@ -1196,11 +1206,6 @@ img {
   stroke: #fd9222;
 }
 
-/* .modal-input:invalid + .modal-icon {
-  stroke: #e74a3b;
-  border-color: #e74a3b;
-} */
-
 .modal-icon {
   stroke: #404040;
   fill: transparent;
@@ -1406,6 +1411,26 @@ img {
     flex-direction: row;
     gap: 32px;
   }
+  /*----------- Made 768--------------*/
+  .made {
+    padding-top: 100px;
+  }
+  .made-title {
+    font-size: 24px;
+    line-height: 1.17;
+    padding-bottom: unset;
+  }
+  .made-list {
+    padding-top: 28px;
+  }
+  .made-slave-part {
+    width: 614px;
+  }
+  .made-img {
+    width: 100%;
+    height: 400px;
+  }
+
   /*----------- Product--------------*/
   .product {
     padding-top: 100px;
@@ -1514,6 +1539,32 @@ img {
   .taste-img {
     width: 214px;
     height: 160px;
+  }
+  /*----------- Made 1200--------------*/
+  .made {
+    padding-top: 120px;
+  }
+
+  .made-slave-part {
+    margin-top: unset;
+    padding: 32px;
+    /* width: 516px; */
+  }
+
+  .made-main-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    flex-wrap: unset;
+    align-items: flex-start;
+  }
+  .made-img {
+    width: 600px;
+    height: 420px;
+    padding-right: 20px;
+  }
+  .made-item {
+    padding-top: 24px;
   }
   /*----------- Product--------------*/
   .product {
