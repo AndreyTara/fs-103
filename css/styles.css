@@ -76,7 +76,7 @@ img {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  /* margin-bottom: 32px; */
+  margin-bottom: 32px;
 }
 
 .section-title span {
@@ -645,7 +645,7 @@ img {
 .made-title {
   font-size: 20px;
   line-height: 1.2;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 .made-main-part {
@@ -1328,6 +1328,9 @@ img {
   .container {
     max-width: 734px;
   }
+  .section-title {
+    margin-bottom: 50px;
+  }
   /*----------- header--------------*/
   .header-nav {
     display: flex;
@@ -1422,11 +1425,10 @@ img {
   .made-title {
     font-size: 24px;
     line-height: 1.17;
-    padding-bottom: unset;
   }
-  .made-list {
+  /* .made-list {
     padding-top: 28px;
-  }
+  } */
   .made-slave-part {
     width: 614px;
   }
@@ -1439,9 +1441,9 @@ img {
   .product {
     padding-top: 100px;
   }
-  .product-title {
+  /* .product-title {
     padding-top: 50px;
-  }
+  } */
   .product-subtitle {
     padding-bottom: unset;
   }
